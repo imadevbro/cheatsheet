@@ -40,6 +40,22 @@ nav a {
     color: inherit;
 }
 
+.anchor{
+    display:block;
+    height:180px; /* this is the height of your header */
+    margin-top:-180px; /* this is again negative value of the height of your header */
+    visibility:hidden;
+ }
+
+ @media screen and (max-width: 800px) {
+    .anchor {
+        display:block;
+        height:250px; /* this is the height of your header */
+        margin-top:-250px; /* this is again negative value of the height of your header */
+        visibility:hidden;
+    }
+  }
+
 nav li:hover {
     background-color: white;
     color:#04AA6D;
@@ -63,10 +79,10 @@ h2 {
 
 table {
     width: 100%;
+    border: 1px solid #04AA6D;
 }
 
 th, td {
-    border: 1px solid transparent;
     text-align: left;
     padding: 10px;
 }
@@ -74,4 +90,11 @@ th, td {
 thead {
     background-color: #04AA6D;
     color: white;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #aae4cf;
+}
+tbody tr:nth-of-type(odd) {
+    background-color: white;
 }
