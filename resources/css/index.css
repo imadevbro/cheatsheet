@@ -9,7 +9,22 @@ nav {
     color: #FFF;
     text-transform: uppercase;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
+
+main {
+    padding-top:200px;
+    padding-left: 40px;
+    padding-right:40px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+      padding-top: 260px;
+    }
+  }
 
 .title {
     font-weight: 800;
@@ -42,5 +57,21 @@ h1 {
 
 h2 {
     font-size: 24px;
-    padding: 20px;
+    padding: 20px 0px;
+    color:#04AA6D;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 10px;
+}
+
+thead {
+    background-color: #04AA6D;
+    color: white;
 }

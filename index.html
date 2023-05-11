@@ -15,20 +15,333 @@
       <h1 class="title">HTML & CSS Cheat Sheet</h1>
       <ul class="nav-links">
         <li><a href="#html-tags">HTML Tags</a></li>
+        <li><a href="#html-tables">HTML Tables</a></li>
         <li><a href="#css-selectors">CSS Selectors</a></li>
-        <li><a href="#advanced-css">Advanced CSS</a></li>
+        <li><a href="#css-properties">CSS Properties</a></li>
+        <li><a href="#css-properties">CSS Layout</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <div id="html-tags">
         <h2 class="section-title">HTML Tags</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Tag name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Atrributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>Defines the document type</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Defines the root element of an HTML document</td>
+                    <td>'lang', 'dir'</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Contains metadata information about the document</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Defines the title of the document</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Defines the body of the document</td>
+                    <td>'background', 'text', 'link', 'vlink', 'alink'</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>Defines a heading</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Defines a paragraph</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Defines a hyperlink</td>
+                    <td>'href', 'target', 'download', 'rel', hreflang', 'type'</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Defines an image</td>
+                    <td>'src', 'alt', 'width', 'height'</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Defines an unordered list</td>
+                    <td>None</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="html-tables">
+        <h2 class="section-title">HTML Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Table Element</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Defines a table</td>
+                    <td>'border', 'width'</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Defines a table row</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Defines a table header cell</td>
+                    <td>'colspan', 'rowspan'</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Defines a table data cell</td>
+                    <td>'colspan', 'rowspan'</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Defines a table caption</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Defines a column within a table</td>
+                    <td>'span'</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Defines a group of heading rows in a table</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;tobdy&gt;</td>
+                    <td>Defines a group of body rows in a table</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfood&gt;</td>
+                    <td>Defines a group of footer rows in a table</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Defines a group of columns in a table</td>
+                    <td>None</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div id="css-selectors">
         <h2 class="section-title">CSS Selectors</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Selector Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>p</td>
+                    <td>Selects all &lt;p&gt; elements</td>
+                    <td>p { color: red; }</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>Selects all elements with class="class"</td>
+                    <td>.class { color: blue; }</td>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>Selects all elements with id="id"</td>
+                    <td>#id { color: green; }</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                    <td>* { font-size: 16px; }</td>
+                </tr>
+                <tr>
+                    <td>element, element</td>
+                    <td>Selects all &lt;element&gt; elements and all &lt;element&gt; elements</td>
+                    <td>h1, h2 { font-size: 24px; }</td>
+                </tr>
+                <tr>
+                    <td>element.class</td>
+                    <td>Selects all &lt;element&gt; elements with class="class"</td>
+                    <td>p.error { color: red; }</td>
+                </tr>
+                <tr>
+                    <td>element1 > element2</td>
+                    <td>Selects all &lt;element2&gt; elements where the parent is a &lt;element1&gt; element</td>
+                    <td>ul > li { margin-left: 10px; }</td>
+                </tr>
+                <tr>
+                    <td>:hover</td>
+                    <td>Selects an element that is being hovered over</td>
+                    <td>a:hover { text-decoration: underline; }</td>
+                </tr>
+                <tr>
+                    <td>:first-child</td>
+                    <td>Selects the first child element of its parent</td>
+                    <td>p:first-child { font-weight: bold; }</td>
+                </tr>
+                <tr>
+                    <td>:last-child</td>
+                    <td>Selects the last child element of its parent</td>
+                    <td>li:last-child { font-weight: bold; }</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div id="advanced-css">
-        <h2 class="section-title">Advanced CSS</h2>
+    <div id="css-properties">
+        <h2 class="section-title">CSS Properties</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Property Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Value Syntax</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>Sets the text color</td>
+                    <td>RGB, HSL, HEX, color name</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Sets the size of the font</td>
+                    <td>px, em</td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>Sets the background color of an element</td>
+                    <td>RGB, HSL, HEX, color name</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Sets the horizontal alignment of text</td>
+                    <td>left, right, center, justify</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>Sets the font family</td>
+                    <td>font family name, serif, sans-serif, monospace, cursive, fantasy</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>Sets the weight of the font</td>
+                    <td>normal, bold, bolder, lighter, weight number</td>
+                </tr>
+                <tr>
+                    <td>line-height</td>
+                    <td>Sets the height of a line</td>
+                    <td>number, px, em, normal</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Sets the padding (inner space) of an element</td>
+                    <td>px, em</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Sets the margin (outer space) of an element</td>
+                    <td>px, em</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>Sets the border of an element</td>
+                    <td>border width - border style - border color</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="css-layout">
+        <h2 class="section-title">CSS Layout</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Layout Technique</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Box Model</td>
+                    <td>Defines the layout of an element as a rectangular box</td>
+                    <td>.box { width: 100px; height: 100px; border: 1px solid black; padding: 10px; margin: 10px; }</td>
+                </tr>
+                <tr>
+                    <td>Flexbox</td>
+                    <td>Defines a flexible container for layout elements</td>
+                    <td>.container { display: flex; flex-wrap: wrap; justify-content: center; }</td>
+                </tr>
+                <tr>
+                    <td>Grid</td>
+                    <td>Defines a grid container for layout elements</td>
+                    <td>.container { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 10px; }</td>
+                </tr>
+                <tr>
+                    <td>Positioning</td>
+                    <td>Defines the position of an element on a page</td>
+                    <td>.box { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }</td>
+                </tr>
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>Designs web pages that adapt to different screen sizes and orientations</td>
+                    <td>@media screen and (max-width: 768px) { body { font-size: 16px; } }</td>
+                </tr>
+                <tr>
+                    <td>Floats</td>
+                    <td>Places an element to the left or right of its container</td>
+                    <td>.img { float: left; margin-right: 10px; }</td>
+                </tr>
+                <tr>
+                    <td>Overflow</td>
+                    <td>Defines what happens when content overflows an element</td>
+                    <td>.container { overflow: auto; }</td>
+                </tr>
+                <tr>
+                    <td>Columns</td>
+                    <td>Defines multiple columns within a page</td>
+                    <td>.container { columns: 2; column-gap: 20px; }</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>Uses a table layout for a webpage</td>
+                    <td>.container { display: table; }</td>
+                </tr>
+                <tr>
+                    <td>Position</td>
+                    <td>Places an element at a specific position on a webpage</td>
+                    <td>.box { position: fixed; top: 0; right: 0; }</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
   </main>
 </body>
