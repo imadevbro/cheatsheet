@@ -1,0 +1,46 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #04AA6D;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title {
+    font-weight: 800;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+nav a {
+    color: inherit;
+}
+
+nav li:hover {
+    background-color: white;
+    color:#04AA6D;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    padding: 20px 10px 0px 10px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 20px;
+}
