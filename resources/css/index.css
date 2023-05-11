@@ -98,3 +98,15 @@ tbody tr:nth-of-type(even) {
 tbody tr:nth-of-type(odd) {
     background-color: white;
 }
+
+.col-a {
+    width: 20%;
+}
+
+.col-b {
+    width: 40%;
+}
+
+.col-c {
+    width: 40%;
+}
